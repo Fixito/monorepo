@@ -1,0 +1,17 @@
+{
+  "name": "monoreposcript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "pnpm -r build",
+    "build:types": "pnpm --filter @monoscript/shared build",
+    "dev": "pnpm -r --parallel dev",
+    "dev:client": "pnpm --filter @monoscript/client dev",
+    "dev:server": "pnpm --filter @monoscript/server dev"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.13.1"
+}
