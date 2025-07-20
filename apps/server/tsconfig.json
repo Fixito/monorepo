@@ -12,7 +12,8 @@
     "sourceMap": true,
     "baseUrl": ".",
     "paths": {
-      "@types/*": ["../../packages/types/src/*"]
+      "@monoscript/packages": ["../../packages/types/src/index"],
+      "@monoscript/packages/*": ["../../packages/types/src/*"]
     }
   },
   "include": ["src/**/*"],

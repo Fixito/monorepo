@@ -1,7 +1,7 @@
 import cors from "cors";
 import express from "express";
 
-import type { Car } from "@monoscript/shared";
+import type { Car } from "@monoscript/packages";
 
 import { cars } from './cars.js';
 

@@ -3,7 +3,7 @@ import axios from 'axios';
 
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 
-import type { Car } from '@monoscript/shared';
+import type { Car } from '@monoscript/packages';
 
 const fetchCars = async () => {
   try {

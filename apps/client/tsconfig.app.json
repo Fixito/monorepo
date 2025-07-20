@@ -27,7 +27,8 @@
     "baseUrl": ".",
     "paths": {
       "@/*": ["./src/*"],
-      "@types/*": ["../../packages/types/src/*"]
+      "@monoscript/packages": ["../../packages/types/src/index"],
+      "@monoscript/packages/*": ["../../packages/types/src/*"]
     }
   },
   "include": ["src"]

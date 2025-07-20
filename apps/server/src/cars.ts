@@ -1,4 +1,4 @@
-import type { Car } from "@monoscript/shared";
+import type { Car } from "@monoscript/packages";
 
 export const cars: Car[] = [
   {
