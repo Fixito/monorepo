@@ -7,15 +7,38 @@
     "lint": "pnpm -r exec eslint .",
     "lint:fix": "pnpm -r exec eslint . --fix",
     "format": "prettier --write .",
-    "format:check": "prettier --check ."
+    "format:check": "prettier --check .",
+    "prepare": "husky"
   },
   "keywords": [],
   "author": "Thomas ROBERT",
   "license": "ISC",
   "packageManager": "pnpm@10.13.1",
   "devDependencies": {
+    "@commitlint/cli": "^19.8.1",
+    "@commitlint/config-conventional": "^19.8.1",
+    "@commitlint/types": "^19.8.1",
     "eslint": "^9.31.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.1.2",
     "prettier": "^3.6.2",
     "typescript-eslint": "^8.37.0"
+  },
+  "lint-staged": {
+    "apps/client/**/*.{js,jsx,ts,tsx}": [
+      "pnpm --filter=client exec eslint --fix",
+      "prettier --write"
+    ],
+    "apps/server/**/*.{js,ts}": [
+      "pnpm --filter=server exec eslint --fix",
+      "prettier --write"
+    ],
+    "packages/**/*.{js,ts}": [
+      "pnpm --filter='./packages/*' exec eslint --fix",
+      "prettier --write"
+    ],
+    "*.{json,md,yml,yaml}": [
+      "prettier --write"
+    ]
   }
 }

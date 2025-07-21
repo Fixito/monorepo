@@ -37,7 +37,7 @@ export default function App() {
     <div className='container mx-auto px-4 py-8 md:px-12'>
       <h1 className='text-3xl font-bold mb-6'>Available Cars</h1>
       <div className='grid grid-cols-1 md:grid-cols-2 gap-6 '>
-        {cars?.map((car) => (
+        {cars?.map(car => (
           <Card key={car.id} className='shadow-lg'>
             <CardHeader>
               <CardTitle className='text-xl'>

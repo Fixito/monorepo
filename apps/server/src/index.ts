@@ -26,5 +26,5 @@ app.get<object, Car[]>('/api/v1/cars', (_req, res) => {
 const port = process.env.PORT || 3000;
 app.listen(port, () =>
   // eslint-disable-next-line no-console
-  console.log(`Server running on port http://localhost:${port}`)
+  console.log(`Server running on port http://localhost:${port}`),
 );

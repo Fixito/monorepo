@@ -27,7 +27,7 @@ const baseConfig = tseslint.config(
       sourceType: 'module',
     },
   },
-  prettier
+  prettier,
 );
 
 export const nodeConfig = tseslint.config(...baseConfig, {
