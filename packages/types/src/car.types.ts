@@ -10,4 +10,4 @@ export interface Car {
   transmission: 'manual' | 'automatic';
   vin: string;
   isAvailable: boolean;
-};
+}

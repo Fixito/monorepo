@@ -6,10 +6,19 @@
   "types": "./src/index.ts",
   "scripts": {
     "build": "tsc -b",
-    "dev": "tsc -w"
+    "dev": "tsc -w",
+    "lint": "eslint ."
   },
   "packageManager": "pnpm@10.13.1",
+  "dependencies": {
+    "@monoscript/eslint-config": "workspace:*"
+  },
   "devDependencies": {
-    "typescript": "~5.8.3"
+    "@eslint/js": "^9.31.0",
+    "eslint": "^9.31.0",
+    "eslint-config-prettier": "^10.1.8",
+    "globals": "^16.3.0",
+    "typescript": "~5.8.3",
+    "typescript-eslint": "^8.37.0"
   }
 }

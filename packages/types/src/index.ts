@@ -1,2 +1,1 @@
-export * from "./car.types.js";
-
+export * from './car.types.js';

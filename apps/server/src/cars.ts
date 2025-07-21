@@ -1,4 +1,4 @@
-import type { Car } from "@monoscript/types";
+import type { Car } from '@monoscript/types';
 
 export const cars: Car[] = [
   {
@@ -12,7 +12,7 @@ export const cars: Car[] = [
     fuelType: 'gasoline',
     transmission: 'automatic',
     vin: 'JTDKARFU0N0123456',
-    isAvailable: true
+    isAvailable: true,
   },
   {
     id: '2',
@@ -25,7 +25,7 @@ export const cars: Car[] = [
     fuelType: 'electric',
     transmission: 'automatic',
     vin: '5YJ3E1EA0LF123456',
-    isAvailable: true
+    isAvailable: true,
   },
   {
     id: '3',
@@ -38,6 +38,6 @@ export const cars: Car[] = [
     fuelType: 'diesel',
     transmission: 'automatic',
     vin: '5UXCR6C05L0123456',
-    isAvailable: false
-  }
+    isAvailable: false,
+  },
 ];
