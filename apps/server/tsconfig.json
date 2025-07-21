@@ -9,12 +9,7 @@
     "moduleResolution": "NodeNext",
     "noUncheckedIndexedAccess": true,
     "outDir": "dist",
-    "sourceMap": true,
-    "baseUrl": ".",
-    "paths": {
-      "@monoscript/packages": ["../../packages/types/src/index"],
-      "@monoscript/packages/*": ["../../packages/types/src/*"]
-    }
+    "sourceMap": true
   },
   "include": ["src/**/*"],
   "exclude": ["dist", "node_modules"]

@@ -10,7 +10,7 @@ importers:
 
   apps/client:
     dependencies:
-      '@monoscript/packages':
+      '@monoscript/types':
         specifier: workspace:*
         version: link:../../packages/types
       '@tailwindcss/vite':
@@ -92,7 +92,7 @@ importers:
 
   apps/server:
     dependencies:
-      '@monoscript/packages':
+      '@monoscript/types':
         specifier: workspace:*
         version: link:../../packages/types
       cors:

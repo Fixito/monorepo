@@ -1,20 +1,12 @@
 {
   "name": "monoreposcript",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Monorepo with Typescript, Express, Vite, Tailwind, Shadcn",
   "scripts": {
-    "install:all": "pnpm install -r",
     "build": "pnpm -r build",
-    "build:client": "pnpm --filter @monoscript/client build",
-    "build:server": "pnpm --filter @monoscript/server build",
-    "build:types": "pnpm --filter @monoscript/packages build",
-    "dev": "pnpm -r --parallel dev",
-    "dev:client": "pnpm --filter @monoscript/client dev",
-    "dev:server": "pnpm --filter @monoscript/server dev"
+    "dev": "pnpm -r --parallel dev"
   },
   "keywords": [],
-  "author": "",
+  "author": "Thomas ROBERT",
   "license": "ISC",
   "packageManager": "pnpm@10.13.1"
 }
